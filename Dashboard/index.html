@@ -15,22 +15,24 @@
         <nav class="menu">
             <h2 class="desktop-only pt-2 mt-4 ms-2 mb-4 fs-5 text" >Menu</h2>
             <div class="menu-icons d-flex justify-content-around mt-3 mb-3">
-                <div class="icon-texto d-flex align-items-center pointer">
-                    <img src="../icons/menu-1.svg" class="menu-icon">
+                <div class="icon-texto d-flex align-items-center">
+                    <img src="../icons/menu-1-v.svg" class="menu-icon">
                     <p class="desktop-only p-0 m-0 text-center texto-verde">Dashboard</p>
                 </div>
-                <div class="icon-texto d-flex align-items-center pointer">
-                    <img src="../icons/menu-3.svg" class="menu-icon menu-icon-black">
-                    <p class="desktop-only p-0 m-0 text-center">Histórico</p>
-                </div>
+                <a href="../Historico/index.html" class="text-decoration-none d-flex align-items-center">
+                    <div class="icon-texto">
+                        <img src="../icons/menu-3.svg" class="menu-icon menu-icon-black">
+                        <p class="desktop-only p-0 m-0 text-center text-dark">Histórico</p>
+                    </div>
+                </a>
                 <img src="../icons/add.svg" class="sombra-add menu-icon mobile-only">
-                <div class="icon-texto d-flex align-items-center pointer">
+                <div class="icon-texto d-flex align-items-center not-created">
                     <img src="../icons/menu-4.svg" class="menu-icon menu-icon-black">
-                    <p class="desktop-only p-0 m-0 text-center">Patrimônio</p>
+                    <p class="desktop-only p-0 m-0 text-center not-created">Patrimônio</p>
                 </div>
-                <div class="icon-texto d-flex align-items-center pointer">
+                <div class="icon-texto d-flex align-items-center not-created">
                     <img src="../icons/menu-2.svg" class="menu-icon menu-icon-black">
-                    <p class="desktop-only p-0 m-0 text-center">Perfil</p>
+                    <p class="desktop-only p-0 m-0 text-center not-created">Perfil</p>
                 </div>
                 <a href="../Login/index.html" class="desktop-only p-0 m-0 text-left text-decoration-none text-secondary">↵ Sair</a>
             </div>
@@ -39,7 +41,7 @@
         <header class="p-3 pt-4 pb-1 cabecalho">
             <div class="d-flex justify-content-between align-items-center m-0">
                 <h3 class="ola-nome">Olá, Victor <img src="../icons/emoji 1.svg" alt="Emoji Feliz" class="emoji-feliz"></h3>
-                <img src="../icons/ajustes.svg" alt="Ajustes" class="icone-ajustes mobile-only">
+                <img src="../icons/ajustes.svg" alt="Ajustes" class="icone-ajustes pointer mb-3">
             </div>
             <p>Você tem o saldo de <b>R$1.598,20</b> para <b>15 dias</b></p>
         </header>
@@ -113,9 +115,9 @@
 
             <section class="carrossel mt-4 pt-1 dias p-grab">
                 <div class="d-flex">
-                    <h3 class="texto-titulo pb-2 ps-4 pointer">Ano</h3>
-                    <h3 class="texto-verde pb-2 ps-4 pointer">• Mês</h3>
-                    <h3 class="texto-titulo pb-2 ps-4 pointer">Semana</h3>
+                    <h3 class="texto-titulo pb-2 ps-4">Ano</h3>
+                    <h3 class="texto-verde pb-2 ps-4">• Mês</h3>
+                    <h3 class="texto-titulo pb-2 ps-4">Semana</h3>
                 </div>
                 <div class="swiper">
                     <div class="swiper-wrapper ps-4">
@@ -384,6 +386,11 @@
             <br>
             <br>
         </main>
+
+        <div class="add-btn desktop-only">
+            <img src="../Icons/add-2.svg">
+            <p class="texto-verde text-center">Adicionar</p>
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

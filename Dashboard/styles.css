@@ -10,8 +10,6 @@ body {
 
 @media screen and (min-width: 900px) {
     body {
-        display: grid;
-        grid-template-columns: auto 100%;
         margin-left: 150px;
     }
 
@@ -22,21 +20,14 @@ body {
             "resumo resumo"
             "categorias dias"
             "costumes dicas";
-        grid-column: 2;
     }
 }
 
 header {
-    /* Cria uma sombra eixoX eixoY blur expansão #cor */
     box-shadow: -1px -1px 6.5368px #FFFFFF, 1px 1px 6.5368px rgba(174, 174, 192, 0.4);
 }
 
 @media screen and (min-width: 900px) {
-    .cabecalho {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
     .resumo {
         grid-area: resumo;
     }
@@ -80,7 +71,6 @@ header {
         left: 0px;
         width: 150px;
         height: 100%;
-        grid-area: destaque-video;
     }
 
     .menu-icons {
@@ -236,10 +226,21 @@ header {
     cursor: pointer;
 }
 
+.not-created {
+    cursor: not-allowed;
+}
+
 .p-grab {
     cursor: grab;
 }
 
 .p-grab:active {
     cursor: grabbing;
+}
+
+.add-btn {
+    position: fixed;
+    bottom: 10px;
+    left: 39px;
+    z-index: 1000;
 }
