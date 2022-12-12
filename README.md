@@ -5,7 +5,7 @@
 # Adami 💰
 <p>❗ MVP of a personal project to control your personal finance.</p>
 
-# Tecnologies 👨‍💻
+# Technologies 👨‍💻
 <ul>
   <li>HTML</li>
   <li>JavaScript</li>
